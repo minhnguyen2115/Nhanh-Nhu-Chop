@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_shape">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#AE4A4A"
+        android:text="Cài đặt"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close"/>
+
+    <TextView
+        android:background="#9C9C9C"
+        android:id="@+id/tvAll"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_header" />
+
+    <RelativeLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#E2D4D4"
+        android:id="@+id/rel_layout_amthanh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_header">
+        <CheckBox
+            android:id="@+id/cb_nhac_nen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="Nhạc nền trò chơi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_layout_nhacnen"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#E2D4D4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rel_layout_amthanh"
+        android:layout_marginTop="1dp">
+        <CheckBox
+            android:id="@+id/cb_am_thanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="Hiệu ứng âm thanh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#E2D4D4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_layout_nhacnen"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:id="@+id/tv_thongbao_choigame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhắc thông báo chơi game"
+            android:layout_toRightOf="@+id/switch_thongbao"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_thongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:thumbTint="@drawable/switch_thumb"
+            app:trackTint="@drawable/switch_track"/>
+        <ImageView
+            android:id="@+id/img_alarm"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/switch_thongbao"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/alarm"/>
+        <ImageView
+            android:id="@+id/img_repeat"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/img_alarm"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/repeat"/>
+        <TextView
+            android:id="@+id/tv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_alarm"
+            android:layout_below="@+id/tv_thongbao_choigame"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="Nhac luc"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_repeat"
+            android:layout_below="@+id/tv_alarm"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="Lap lai"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_repeat"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Ban da dat thoi gian choi"
+            android:textColor="#FA0202"
+            android:textSize="15sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_alarm"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_thongbao_choigame"
+            android:textSize="30sp"
+            android:layout_toRightOf="@+id/tv_alarm" />
+
+        <Spinner
+            android:id="@+id/spinner_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_alarm"
+            android:layout_toRightOf="@+id/tv_repeat"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

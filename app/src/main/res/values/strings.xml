@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NhanhNhuChop</string>
+    <string name="diem_cao">Điểm cao</string>
+    <string name="cai_dat">Cài đặt</string>
+    <string name="choi_ngay">Chơi ngay</string>
+    <string name="login_facebook">Đăng nhập bằng Facebook</string>
+    <string name="the_le_choi">Bạn phải vượt qua 10 câu hỏi trong thơi gian 2 phút,
+        trả lời đúng được cộng 10 điểm, trả lời sai bị trừ 10 điểm, bỏ qua bị trừ 5 điểm. Bạn đã sẵn sang chơi?</string>
+    <string name="thoat_play">Điểm của bạn sẽ không được lưu. Bạn có muốn thoát?</string>
+    <string name="thoat_home">Bạn có muốn thoát trò chơi?</string>
+    <string name="facebook_app_id">2384796978419020</string>
+
+</resources>

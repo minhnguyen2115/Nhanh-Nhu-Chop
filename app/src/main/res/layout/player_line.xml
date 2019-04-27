@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:gravity="center" />
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/img_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/tv_rank" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Quang Minh"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/tv_point"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:layout_weight="4"/>
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="100"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="#3CF707"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

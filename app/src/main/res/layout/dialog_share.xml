@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:background="@drawable/dialog_shape">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#AE4A4A"
+        android:text="Chia sẻ"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_header"
+        android:layout_marginTop="-2dp"
+        android:paddingTop="15dp"
+        android:text="Số điểm của bạn"
+        android:textAlignment="center"
+        android:textColor="#1BB225"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="30"
+        android:textAlignment="center"
+        android:textColor="#F70202"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/bt_choi_lai"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_diem"
+        android:background="@drawable/button_shape_green"
+        android:text="Chơi lại"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_trang_chu"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="163dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape_blue"
+        android:text="Trang chủ"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_chia_se"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/bt_quay_lai"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape_red"
+        android:text="Chia sẻ"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</RelativeLayout>
